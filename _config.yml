@@ -1,0 +1,11 @@
+include:
+  - sitemap.xml
+
+# MIME types for GitHub Pages
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - .git
+  - .gitignore
