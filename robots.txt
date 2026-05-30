@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://magicalpaws.github.io/Magical-Paws-Kids-TV-/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+
+# Allow indexing of all public pages
+Allow: /
+Allow: /*.html
+Allow: /blog.html
+Allow: /monetize.html
+Allow: /privacy-policy.html
+Allow: /terms-of-service.html
+
+# Crawl delay (be nice to servers)
+Crawl-delay: 1
