@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Magical Paws Kids TV</title>
+  <meta name="description" content="The page you're looking for couldn't be found, but we have plenty of magical content waiting!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet" />
+  
+  <style>
+    :root {
+      --orange: #E96B2D;
+      --bg: #FFF8F2;
+      --bg2: #FFFFFF;
+      --text: #1A1208;
+      --text2: #6B5744;
+      --border: rgba(0,0,0,0.08);
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Nunito', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    nav {
+      background: var(--bg2);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.75rem 2rem;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo .paw-icon { font-size: 28px; }
+    .nav-brand { font-family: 'Baloo 2', sans-serif; font-size: 16px; font-weight: 800; color: var(--text); }
+    .nav-brand span { color: var(--orange); }
+    .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 700; color: var(--text2); text-decoration: none; }
+    .nav-links a:hover { color: var(--orange); }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .error-code {
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 120px;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-family: 'Baloo 2', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--text2);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .emoji-container {
+      font-size: 80px;
+      margin-bottom: 2rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .15s, opacity .15s;
+    }
+
+    .btn-primary {
+      background: var(--orange);
+      color: white;
+      box-shadow: 0 4px 20px rgba(233,107,45,0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text);
+      border: 2px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      background: rgba(0,0,0,0.04);
+    }
+
+    footer {
+      background: #1A1208;
+      padding: 2rem;
+      text-align: center;
+      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--orange);
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      nav { padding: 0.75rem 1rem; }
+      .container { padding: 2rem 1rem; }
+      .error-code { font-size: 80px; }
+      h1 { font-size: 28px; }
+      .emoji-container { font-size: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <span class="paw-icon">🐾</span>
+      <div class="nav-brand">Magical<span>Paws</span><br>Kids TV</div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="https://www.youtube.com/@Magicalpawskids" target="_blank">YouTube</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="error-code">404</div>
+    <div class="emoji-container">🐾❓🐾</div>
+    <h1>Oops! Page Not Found</h1>
+    <p>It looks like this magical page has wandered off into the forest! Don't worry — we have plenty of amazing content waiting for you.</p>
+    
+    <div class="btn-group">
+      <a href="index.html" class="btn btn-primary">🏠 Go Home</a>
+      <a href="blog.html" class="btn btn-outline">📚 Read Blog</a>
+      <a href="https://www.youtube.com/@Magicalpawskids" target="_blank" class="btn btn-outline">▶ Watch Videos</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Magical Paws Kids TV. All rights reserved. | <a href="privacy-policy.html">Privacy</a> | <a href="terms-of-service.html">Terms</a> | <a href="contact.html">Contact</a></p>
+  </footer>
+
+</body>
+</html>
